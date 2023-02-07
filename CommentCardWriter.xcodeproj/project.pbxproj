@@ -15,6 +15,7 @@
 		DEEC55E529925AA0001653AD /* CommentCardWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55E429925AA0001653AD /* CommentCardWriterUITests.swift */; };
 		DEEC55E729925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55E629925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift */; };
 		DEEC55F729926285001653AD /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55F629926285001653AD /* SettingsPage.swift */; };
+		DEEC55F929926505001653AD /* PreviousComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55F829926505001653AD /* PreviousComments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		DEEC55E429925AA0001653AD /* CommentCardWriterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITests.swift; sourceTree = "<group>"; };
 		DEEC55E629925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DEEC55F629926285001653AD /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		DEEC55F829926505001653AD /* PreviousComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousComments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				DEEC55CB29925A9E001653AD /* HomePage.swift */,
 				DEEC55F629926285001653AD /* SettingsPage.swift */,
+				DEEC55F829926505001653AD /* PreviousComments.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEC55F929926505001653AD /* PreviousComments.swift in Sources */,
 				DEEC55F729926285001653AD /* SettingsPage.swift in Sources */,
 				DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */,
 				DEEC55CA29925A9E001653AD /* CommentCardWriterApp.swift in Sources */,
