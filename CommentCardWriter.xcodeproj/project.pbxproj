@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DEEC55CA29925A9E001653AD /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */; };
-		DEEC55CC29925A9E001653AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55CB29925A9E001653AD /* ContentView.swift */; };
+		DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55CB29925A9E001653AD /* HomePage.swift */; };
 		DEEC55CE29925A9F001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEC55CD29925A9F001653AD /* Assets.xcassets */; };
 		DEEC55D129925A9F001653AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEC55D029925A9F001653AD /* Preview Assets.xcassets */; };
 		DEEC55DB29925AA0001653AD /* CommentCardWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55DA29925AA0001653AD /* CommentCardWriterTests.swift */; };
 		DEEC55E529925AA0001653AD /* CommentCardWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55E429925AA0001653AD /* CommentCardWriterUITests.swift */; };
 		DEEC55E729925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55E629925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift */; };
+		DEEC55F729926285001653AD /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55F629926285001653AD /* SettingsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		DEEC55C629925A9E001653AD /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
-		DEEC55CB29925A9E001653AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEEC55CB29925A9E001653AD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		DEEC55CD29925A9F001653AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEC55D029925A9F001653AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEEC55D629925AA0001653AD /* CommentCardWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		DEEC55E029925AA0001653AD /* CommentCardWriterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardWriterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEC55E429925AA0001653AD /* CommentCardWriterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITests.swift; sourceTree = "<group>"; };
 		DEEC55E629925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEEC55F629926285001653AD /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		DEEC55C829925A9E001653AD /* CommentCardWriter */ = {
 			isa = PBXGroup;
 			children = (
+				DEEC55F52992622B001653AD /* Views */,
 				DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */,
-				DEEC55CB29925A9E001653AD /* ContentView.swift */,
 				DEEC55CD29925A9F001653AD /* Assets.xcassets */,
 				DEEC55CF29925A9F001653AD /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				DEEC55E629925AA0001653AD /* CommentCardWriterUITestsLaunchTests.swift */,
 			);
 			path = CommentCardWriterUITests;
+			sourceTree = "<group>";
+		};
+		DEEC55F52992622B001653AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC55CB29925A9E001653AD /* HomePage.swift */,
+				DEEC55F629926285001653AD /* SettingsPage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEC55CC29925A9E001653AD /* ContentView.swift in Sources */,
+				DEEC55F729926285001653AD /* SettingsPage.swift in Sources */,
+				DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */,
 				DEEC55CA29925A9E001653AD /* CommentCardWriterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
