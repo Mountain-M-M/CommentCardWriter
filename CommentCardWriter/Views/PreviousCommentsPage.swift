@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PreviousComments: View {
+struct PreviousCommentsPage: View {
     var body: some View {
             
         List {
@@ -15,6 +15,8 @@ struct PreviousComments: View {
             Text("Previous Comments")
                 .font(.headline)
         
+            // ADD DUMMY DATA
+            
             Button {
                 
             } label: {
@@ -39,8 +41,8 @@ struct PreviousComments: View {
     }
 }
 
-struct PreviousComments_Previews: PreviewProvider {
+struct PreviousCommentsPage_Previews: PreviewProvider {
     static var previews: some View {
-        PreviousComments()
+        PreviousCommentsPage()
     }
 }
