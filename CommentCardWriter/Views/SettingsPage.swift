@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct SettingsPage: View {
+    @State private var toggleReminder = true
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+        
+            List {
+                
+                Text("Settings")
+                    .font(.headline)
+                
+                Button {
+                    
+                } label: {
+                    Text("Edit Subjects")
+                }
+                
+                Toggle("Reminder", isOn: $toggleReminder)
+            }
+        }
     }
 }
 
