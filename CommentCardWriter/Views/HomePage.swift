@@ -50,6 +50,8 @@ struct HomePage: View {
             
             Spacer()
             
+            Text("Comment Cards Due: \(CurrentDate.getFormattedDate())")
+            
         }
     }
 }

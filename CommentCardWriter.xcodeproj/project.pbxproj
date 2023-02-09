@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852669DB299544B3008BE4E4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852669DA299544B3008BE4E4 /* Date.swift */; };
 		DEEC55CA29925A9E001653AD /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */; };
 		DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55CB29925A9E001653AD /* HomePage.swift */; };
 		DEEC55CE29925A9F001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEC55CD29925A9F001653AD /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852669DA299544B3008BE4E4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		DEEC55C629925A9E001653AD /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		DEEC55CB29925A9E001653AD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		852669D9299544A0008BE4E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				852669DA299544B3008BE4E4 /* Date.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DEEC55BD29925A9E001653AD = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		DEEC55C829925A9E001653AD /* CommentCardWriter */ = {
 			isa = PBXGroup;
 			children = (
+				852669D9299544A0008BE4E4 /* Model */,
 				DEEC55F52992622B001653AD /* Views */,
 				DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */,
 				DEEC55CD29925A9F001653AD /* Assets.xcassets */,
@@ -275,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEEC55F929926505001653AD /* PreviousCommentsPage.swift in Sources */,
+				852669DB299544B3008BE4E4 /* Date.swift in Sources */,
 				DEEC55F729926285001653AD /* SettingsPage.swift in Sources */,
 				DEEC55FB299266E4001653AD /* GeneratingPage.swift in Sources */,
 				DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */,
