@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		852669DB299544B3008BE4E4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852669DA299544B3008BE4E4 /* Date.swift */; };
 		852669DD299545EC008BE4E4 /* ExportPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852669DC299545EC008BE4E4 /* ExportPage.swift */; };
+		85C6290E299552D90026827A /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6290D299552D90026827A /* Subjects.swift */; };
 		DEEC55CA29925A9E001653AD /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */; };
 		DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC55CB29925A9E001653AD /* HomePage.swift */; };
 		DEEC55CE29925A9F001653AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEC55CD29925A9F001653AD /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		852669DA299544B3008BE4E4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		852669DC299545EC008BE4E4 /* ExportPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPage.swift; sourceTree = "<group>"; };
+		85C6290D299552D90026827A /* Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
 		DEEC55C629925A9E001653AD /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEC55C929925A9E001653AD /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		DEEC55CB29925A9E001653AD /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				852669DA299544B3008BE4E4 /* Date.swift */,
+				85C6290D299552D90026827A /* Subjects.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				852669DB299544B3008BE4E4 /* Date.swift in Sources */,
 				852669DD299545EC008BE4E4 /* ExportPage.swift in Sources */,
 				DEEC55F729926285001653AD /* SettingsPage.swift in Sources */,
+				85C6290E299552D90026827A /* Subjects.swift in Sources */,
 				DEEC55FB299266E4001653AD /* GeneratingPage.swift in Sources */,
 				DEEC55CC29925A9E001653AD /* HomePage.swift in Sources */,
 				DEEC55CA29925A9E001653AD /* CommentCardWriterApp.swift in Sources */,

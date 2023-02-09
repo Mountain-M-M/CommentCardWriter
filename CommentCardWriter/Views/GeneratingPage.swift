@@ -15,115 +15,124 @@ struct GeneratingPage: View {
     @State private var ratingSelectionFTP = 5
     var body: some View {
         
-        VStack {
+        NavigationView {
             
-            Menu() {
+            VStack {
                 
-                Button {
-                    subjectSelection = "Computer Science (DPC)"
-                } label: {
-                    Text("Computer Science (DPC)")
-                }
-                
-                
-                Button {
-                    subjectSelection = "Double Maths Applied (SSAG)"
-                } label: {
-                    Text("Double Maths Applied (SSAG)")
-                }
-                
-                
-                Button {
+                List {
                     
-                } label: {
-                    Text("Physics (JWET)")
+                    Menu() {
+                        
+                        Button {
+                            subjectSelection = "Computer Science (DPC)"
+                        } label: {
+                            Text("Computer Science (DPC)")
+                        }
+                        
+                        
+                        Button {
+                            subjectSelection = "Double Maths Applied (SSAG)"
+                        } label: {
+                            Text("Double Maths Applied (SSAG)")
+                        }
+                        
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("Physics (JWET)")
+                        }
+                        
+                        
+                    } label: {
+                        Text("\(subjectSelection)")
+                    }
+                    .padding()
+                    
+                    
+                    
+                    HStack {
+                        
+                        Text("EW Performance:")
+                            .padding()
+                        
+                        Spacer()
+                        
+                        Picker(selection: $ratingSelectionEW, label: Text("")) {
+                            ForEach(1...10, id: \.self) { number in
+                                Text("\(number)").tag(number)
+                            }
+                        }
+                        .frame(width: 25, height: 50)
+                        .clipped()
+                        .pickerStyle(WheelPickerStyle())
+                        .padding()
+                    }
+                    
+                    HStack {
+                        
+                        Text("Classroom Contributions:")
+                            .padding()
+                        
+                        Spacer()
+                        
+                        Picker(selection: $ratingSelectionCC, label: Text("")) {
+                            ForEach(1...10, id: \.self) { number in
+                                Text("\(number)").tag(number)
+                            }
+                        }
+                        .frame(width: 25, height: 50)
+                        .clipped()
+                        .pickerStyle(WheelPickerStyle())
+                        .padding()
+                    }
+                    
+                    HStack {
+                        
+                        Text("Latest Test Performance:")
+                            .padding()
+                        
+                        Spacer()
+                        
+                        Picker(selection: $ratingSelectionTP, label: Text("")) {
+                            ForEach(1...10, id: \.self) { number in
+                                Text("\(number)").tag(number)
+                            }
+                        }
+                        .frame(width: 25, height: 50)
+                        .clipped()
+                        .pickerStyle(WheelPickerStyle())
+                        .padding()
+                    }
+                    
+                    HStack {
+                        
+                        Text("Confidence For Future Tests:")
+                            .padding()
+                        
+                        Spacer()
+                        
+                        Picker(selection: $ratingSelectionFTP, label: Text("")) {
+                            ForEach(1...10, id: \.self) { number in
+                                Text("\(number)").tag(number)
+                            }
+                        }
+                        .frame(width: 25, height: 50)
+                        .clipped()
+                        .pickerStyle(WheelPickerStyle())
+                        .padding()
+                    }
                 }
                 
+                Spacer()
                 
-            } label: {
-                Text("\(subjectSelection)")
+                NavigationLink(destination: ExportPage()) {
+                    Text("Done")
+                        .frame(maxWidth: 200, maxHeight: 40)
+                }
+                .buttonStyle(.borderedProminent)
+                .padding()
             }
-            .padding()
-            
-            List {
-                HStack {
-                    
-                    Text("EW Performance:")
-                    
-                    Spacer()
-                    
-                    Picker(selection: $ratingSelectionEW, label: Text("")) {
-                        ForEach(1...10, id: \.self) { number in
-                            Text("\(number)").tag(number)
-                        }
-                    }
-                    .frame(width: 40, height: 50)
-                    .clipped()
-                    .pickerStyle(WheelPickerStyle())
-                    .padding()
-                }
-                
-                HStack {
-                    
-                    Text("Classroom Contributions:")
-                    
-                    Spacer()
-                    
-                    Picker(selection: $ratingSelectionCC, label: Text("")) {
-                        ForEach(1...10, id: \.self) { number in
-                            Text("\(number)").tag(number)
-                        }
-                    }
-                    .frame(width: 40, height: 50)
-                    .clipped()
-                    .pickerStyle(WheelPickerStyle())
-                    .padding()
-                }
-                
-                HStack {
-                    
-                    Text("Latest Test Performance:")
-                    
-                    Spacer()
-                    
-                    Picker(selection: $ratingSelectionTP, label: Text("")) {
-                        ForEach(1...10, id: \.self) { number in
-                            Text("\(number)").tag(number)
-                        }
-                    }
-                    .frame(width: 40, height: 50)
-                    .clipped()
-                    .pickerStyle(WheelPickerStyle())
-                    .padding()
-                }
-                
-                HStack {
-                    
-                    Text("Confidence For Future Tests:")
-                    
-                    Spacer()
-                    
-                    Picker(selection: $ratingSelectionFTP, label: Text("")) {
-                        ForEach(1...10, id: \.self) { number in
-                            Text("\(number)").tag(number)
-                        }
-                    }
-                    .frame(width: 40, height: 50)
-                    .clipped()
-                    .pickerStyle(WheelPickerStyle())
-                    .padding()
-                }
-            }
-            
-            Button {
-                
-            } label: {
-                Text("Done")
-                    .frame(maxWidth: 200, maxHeight: 40)
-            }
-            .buttonStyle(.borderedProminent)
-            .font(.headline)
-            .padding()
         }
     }
 }

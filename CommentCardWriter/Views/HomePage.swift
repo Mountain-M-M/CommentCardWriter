@@ -9,49 +9,45 @@ import SwiftUI
 
 struct HomePage: View {
     var body: some View {
-        VStack {
-            Text("Comment Card Writer")
-                .font(.title)
-                .padding()
-            
-            Text("Eton College")
-                .padding()
+        NavigationView {
+            VStack {
+                Text("Comment Card Writer")
+                    .font(.title)
+                    .padding()
                 
-            Spacer()
-            
-            Button {
-                
-            } label: {
-                Text("Generate New")
-                    .frame(maxWidth: 200, maxHeight: 40)
-            }
-            .buttonStyle(.bordered)
-            .padding()
-            
-            Button {
-                
-            } label: {
-                Text("Settings")
-                    .frame(maxWidth: 200, maxHeight: 40)
-            }
-            .buttonStyle(.bordered)
-            .padding()
-                
-            
-            Button {
-                
-            } label: {
-                Text("View Previous")
-                    .frame(maxWidth: 200, maxHeight: 40)
-            }
-            .buttonStyle(.bordered)
-            .padding()
+                Text("Eton College")
     
-            
-            Spacer()
-            
-            Text("Comment Cards Due: \(CurrentDate.getFormattedDate())")
-            
+                    
+                Spacer()
+                
+                NavigationLink(destination: GeneratingPage()) {
+                    Text("Generate New")
+                        .frame(maxWidth: 200, maxHeight: 40)
+                }
+                .buttonStyle(.bordered)
+                .padding()
+                
+                NavigationLink(destination: SettingsPage()) {
+                    Text("Settings")
+                        .frame(maxWidth: 200, maxHeight: 40)
+                }
+                .buttonStyle(.bordered)
+                .padding()
+                    
+                
+                NavigationLink(destination: PreviousCommentsPage()) {
+                    Text("View Previous")
+                        .frame(maxWidth: 200, maxHeight: 40)
+                }
+                .buttonStyle(.bordered)
+                .padding()
+        
+                
+                Spacer()
+                
+                Text("Comment Cards Due: \(CurrentDate.getFormattedDate())")
+                
+            }
         }
     }
 }
