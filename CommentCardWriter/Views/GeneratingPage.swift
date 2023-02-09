@@ -9,7 +9,10 @@ import SwiftUI
 
 struct GeneratingPage: View {
     @State private var subjectSelection = "Select Subject"
-    @State private var ratingSelection = 0
+    @State private var ratingSelectionEW = 5
+    @State private var ratingSelectionCC = 5
+    @State private var ratingSelectionTP = 5
+    @State private var ratingSelectionFTP = 5
     var body: some View {
         
         VStack {
@@ -42,36 +45,85 @@ struct GeneratingPage: View {
             }
             .padding()
             
-            HStack {
-                
-                VStack {
-                    Text("EW Performance")
-                        .padding()
-                        .frame(alignment: .leading)
+            List {
+                HStack {
                     
-                    Text("Contributions in Lessons")
-                        .padding()
+                    Text("EW Performance:")
+                    
+                    Spacer()
+                    
+                    Picker(selection: $ratingSelectionEW, label: Text("")) {
+                        ForEach(1...10, id: \.self) { number in
+                            Text("\(number)").tag(number)
+                        }
+                    }
+                    .frame(width: 40, height: 50)
+                    .clipped()
+                    .pickerStyle(WheelPickerStyle())
+                    .padding()
                 }
                 
-                Spacer()
-                
-                VStack {
-                    Picker("Choose Option", selection: $ratingSelection) {
-                        ForEach(1...10, id: \.self) {
-                            Text("\($0)")
-                        }
-                    }
-                    .padding()
+                HStack {
                     
-                    Picker("Choose Option", selection: $ratingSelection) {
-                        ForEach(1...10, id: \.self) {
-                            Text("\($0)")
+                    Text("Classroom Contributions:")
+                    
+                    Spacer()
+                    
+                    Picker(selection: $ratingSelectionCC, label: Text("")) {
+                        ForEach(1...10, id: \.self) { number in
+                            Text("\(number)").tag(number)
                         }
                     }
+                    .frame(width: 40, height: 50)
+                    .clipped()
+                    .pickerStyle(WheelPickerStyle())
+                    .padding()
+                }
+                
+                HStack {
+                    
+                    Text("Latest Test Performance:")
+                    
+                    Spacer()
+                    
+                    Picker(selection: $ratingSelectionTP, label: Text("")) {
+                        ForEach(1...10, id: \.self) { number in
+                            Text("\(number)").tag(number)
+                        }
+                    }
+                    .frame(width: 40, height: 50)
+                    .clipped()
+                    .pickerStyle(WheelPickerStyle())
+                    .padding()
+                }
+                
+                HStack {
+                    
+                    Text("Confidence For Future Tests:")
+                    
+                    Spacer()
+                    
+                    Picker(selection: $ratingSelectionFTP, label: Text("")) {
+                        ForEach(1...10, id: \.self) { number in
+                            Text("\(number)").tag(number)
+                        }
+                    }
+                    .frame(width: 40, height: 50)
+                    .clipped()
+                    .pickerStyle(WheelPickerStyle())
                     .padding()
                 }
             }
             
+            Button {
+                
+            } label: {
+                Text("Done")
+                    .frame(maxWidth: 200, maxHeight: 40)
+            }
+            .buttonStyle(.borderedProminent)
+            .font(.headline)
+            .padding()
         }
     }
 }
